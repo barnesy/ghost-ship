@@ -1,0 +1,24 @@
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+textarea {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  margin: .3rem 0 0;
+  resize: none;
+  background: none;
+  font-size: 1.8rem;
+  padding: 1rem .75rem;
+  border-bottom:1px solid blue;
+  transition: border 50ms linear, background 50ms linear,padding 50ms linear;
+
+  &:focus {
+    background: #f7f9fa;
+    padding: 1rem .75rem;
+  }
+}

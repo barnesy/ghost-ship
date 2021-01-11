@@ -1,0 +1,131 @@
+.pattern.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0 6rem;
+
+  .hed {
+    width: 100%;
+    flex-grow: 3;
+  }
+}
+
+.card {
+  display: flex;
+  box-sizing: border-box;
+  margin: 1.5rem;
+  max-width: 32rem;
+  min-width: 28rem;
+  margin-bottom: 6rem;
+  box-shadow: 0 1.5rem 3.5rem rgba(50,50,93,.1), 0 0.5rem 1.5rem rgba(0,0,0,.07);
+  position: relative;
+  flex-direction: column;
+  transition: box-shadow .2s;
+  border-radius: 3rem;
+  overflow: hidden;
+  z-index: 1;
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    input {
+      margin: 0 1rem;
+      background: $light-grey;
+      border-radius: .3rem;
+      padding: .5rem 1rem;
+      color: $grey;
+      border: none;
+      cursor: pointer;
+      width: 12rem;
+    }
+  }
+
+  .label {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    color: $light-green;
+  }
+
+  .hed {
+    font-size: 2.4rem;
+    color: black;
+    margin: 0.2rem 0 1.4rem;
+  }
+}
+
+a.card:hover{
+  box-shadow: 0 0rem 0rem rgba(50,50,93,.1), 0 0.5rem 1.5rem rgba(0,0,0,.07);
+}
+
+.card--featured {
+
+  .image, img {
+    width: 100%;
+  }
+}
+
+.card--content {
+  padding: 1.6rem 3rem 3rem;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
+.card--image  {
+  background-position: center;
+  background-size: cover;
+  box-shadow: unset;
+  min-height: 40rem;
+  flex-direction: unset;
+  align-items: flex-end;
+
+  .card--content {
+    padding: 1.6rem 3rem 3rem;
+    background: none;
+    z-index: 1;
+
+    .hed, label, p {
+      color: $white;
+    }
+  }
+}
+
+.card--flat {
+  box-shadow: unset;
+
+  .card--content {
+    background: none;
+    padding: 0;
+  }
+}
+
+.card--small {
+  max-width: 20rem;
+  min-width: unset;
+
+  .card--content {
+    padding: 1rem 2rem 2rem;;
+  }
+}
+
+.card--large {
+  max-width: 46rem;
+}
+
+.card--mega {
+  max-width: 60rem;
+}

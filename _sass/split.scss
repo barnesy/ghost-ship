@@ -1,0 +1,81 @@
+.split {
+  display: flex;
+  flex-direction: row;
+  min-height: 46rem;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  .image {
+    width: 100%;
+    max-width: 60rem;
+    background: lightgray;
+    border-bottom: 0.6rem solid $red;
+  }
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    .card {
+      margin:6rem 3rem;
+    }
+
+    .copy {
+      margin:6rem;
+    }
+
+    .content p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .left {
+    box-sizing: border-box;
+  }
+
+  &.split--small {
+    max-width: 100rem;
+  }
+
+  &.split--right-weighted {
+    .left { width: 40%; }
+    .right {
+      width: 60%;
+      .image { max-width: unset; }
+    }
+  }
+
+  &.split--left-weighted {
+    .left {
+      width: 60%;
+      .image { max-width: unset; }
+    }
+    .right { width: 40%; }
+  }
+}
+
+@media (max-width: 800px) {
+  .split {
+    flex-direction: column;
+
+    .left, .right {
+      width: 100%;
+
+      .copy {
+        margin: 6rem 0;
+      }
+    }
+
+    &.split--right-weighted .left,
+    &.split--right-weighted .right,
+    &.split--left-weighted .left,
+    &.split--left-weighted .right, { width: 100%; }
+
+    &.split--left-weighted {
+      flex-direction: column-reverse;
+    }
+  }
+}

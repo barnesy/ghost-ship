@@ -1,0 +1,74 @@
+---
+---
+
+@import "variables";
+@import "controls";
+@import "typography";
+@import "image-break";
+@import "blockquote";
+@import "card-copy";
+@import "resource";
+@import "split";
+@import "copy";
+@import "card";
+@import "grid";
+
+body {
+  margin: 0;
+  background: #efefef;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3rem;
+  max-width: 120rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.pattern {
+  margin: 10rem auto;
+}
+
+.content {
+  max-width: 64rem;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .content {
+    margin: 6rem 0;
+  }
+
+  .pattern {
+    margin: 5rem auto;
+  }
+
+  .highlight {
+    width: 30rem;
+  }
+}
+
+.highlight {
+  margin: 3rem 0;
+  max-width: 46rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 3rem;
+  background-color: white;
+  padding: 2rem 3rem 1rem 1rem;
+
+  pre {
+    background-color: white;
+    overflow: scroll;
+  }
+
+  .lineno {
+    color: $light-grey;
+  }
+}

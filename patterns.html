@@ -1,0 +1,339 @@
+---
+layout: default
+title: Design System | Southern Company Gas
+---
+
+<div class="pattern">
+
+  <div class="copy">
+    <p class="hed hed--large">Patterns</p>
+  </div>
+
+</div>
+
+<div class="pattern">
+  <h2 class="hed hed--medium center">Card group</h2>
+</div>
+
+<div class="card-group pattern">
+  <div class="card">
+    <div class="card--featured">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+    </div>
+    <div class="card--content">
+      <div class="label">Label</div>
+      <h3 class="hed">Card</h3>
+      <p>Some cards have a paragraph of copy.</p>
+    </div>
+  </div>
+
+  <div class="card card--image" style="background-image:url({{ site.url }}/assets/img/place-holder-image.png);">
+    <div class="card--content">
+      <h3 class="hed">Image card</h3>
+    </div>
+  </div>
+
+  <div class="card card--flat">
+    <div class="card--featured">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+    </div>
+    <div class="card--content">
+      <div class="label">Label</div>
+      <h3 class="hed">Flat card</h3>
+    </div>
+  </div>
+
+  {% highlight html linenos %}
+  <div class="card-group pattern">
+    <div class="card">
+      <div class="card--featured">
+        <img class="image" src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+      </div>
+      <div class="card--content">
+        <div class="label">Label</div>
+        <h3 class="hed">Card</h3>
+        <p>Some cards have a paragraph of copy.</p>
+      </div>
+    </div>
+
+    <div class="card card--image" style="background-image:url({{ site.url }}/assets/img/place-holder-image.png);">
+      <div class="card--content">
+        <h3 class="hed">Image card</h3>
+      </div>
+    </div>
+
+    <div class="card card--flat">
+      <div class="card--featured">
+        <img class="image" src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+      </div>
+      <div class="card--content">
+        <div class="label">Label</div>
+        <h3 class="hed">Flat card</h3>
+      </div>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+<div class="pattern">
+  <h2 class="hed hed--medium center">Splits</h2>
+</div>
+
+<div class="pattern split split--left-weighted">
+  <div class="left">
+    <div class="copy copy--left">
+      <h2 class="hed hed--large">Copy+Image<br/>(left-weighted)</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, venenatis id libero ut, sagittis luctus mauris. Pellentesque nec porttitor libero.</p>
+      {% highlight html linenos %}
+      <div class="pattern split split--left-weighted">
+        <div class="left">
+          <div class="copy copy--left">
+            <h2 class="hed hed--large">Copy+Image<br/>(left-weighted)</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            {% highlight html %}
+
+            {% endhighlight %}
+          </div>
+        </div>
+        <div class="right">
+          <img src="{{ site.url }}/assets/img/place-holder-image-small.png" />
+        </div>
+      </div>
+      {% endhighlight %}
+    </div>
+  </div>
+  <div class="right">
+    <img src="{{ site.url }}/assets/img/place-holder-image-small.png" />
+  </div>
+</div>
+
+<div class="pattern split split--right-weighted">
+  <div class="left">
+    <img src="{{ site.url }}/assets/img/place-holder-image-small.png" />
+  </div>
+  <div class="right">
+    <div class="copy copy--left">
+      <h2 class="hed hed--large">Copy+Image<br/>(right-weighted)</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, venenatis id libero ut, sagittis luctus mauris. Pellentesque nec porttitor libero. Nunc id mattis felis, at dignissim augue. Duis ut mauris erat. Curabitur sodales congue nunc, sit amet lobortis urna vestibulum vitae. Vivamus commodo erat quis justo fringilla hendrerit.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pattern">
+  <h2 class="hed hed--medium center">Splits with cards</h2>
+</div>
+
+<div class="pattern split split--small split--left-weighted">
+  <div class="left">
+    <div class="copy copy--left">
+      <h2 class="hed hed--large">Card+Copy</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, venenatis id libero ut, sagittis luctus mauris. Pellentesque nec porttitor libero.</p>
+
+      {% highlight html linenos %}
+      <div class="pattern split split--small split--left-weighted">
+        <div class="left">
+          <div class="copy copy--left">
+            <h2 class="hed hed--large">Card+Copy</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, venenatis id libero ut, sagittis luctus mauris. Pellentesque nec porttitor libero.</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="card">
+            <div class="card--featured">
+              <img src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+            </div>
+            <div class="card--content">
+              <div class="label">Label</div>
+              <h3 class="hed">Card</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endhighlight %}
+
+    </div>
+  </div>
+  <div class="right">
+    <div class="card">
+      <div class="card--featured">
+        <img src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+      </div>
+      <div class="card--content">
+        <div class="label">Label</div>
+        <h3 class="hed">Card</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pattern split split--small split--right-weighted">
+  <div class="left">
+    <div class="card">
+      <div class="card--featured">
+        <img src="{{ site.url }}/assets/img/place-holder-image.png" alt="" />
+      </div>
+      <div class="card--content">
+        <div class="label">Label</div>
+        <h3 class="hed">Card</h3>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="copy copy--left">
+      <h2 class="hed hed--large">Card+Copy</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, venenatis id libero ut, sagittis luctus mauris. Pellentesque nec porttitor libero. Nunc id mattis felis, at dignissim augue. Duis ut mauris erat. Curabitur sodales congue nunc, sit amet lobortis urna vestibulum vitae. Vivamus commodo erat quis justo fringilla hendrerit.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pattern">
+  <h2 class="hed hed--medium center">Grid</h2>
+</div>
+
+<div class="pattern grid">
+  <div class="grid--item">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <label>Grid Item</label>
+  </div>
+  <div class="grid--item">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <label>Grid Item</label>
+  </div>
+  <div class="grid--item">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <label>Grid Item</label>
+  </div>
+  <div class="grid--item">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <label>Grid Item</label>
+  </div>
+  <div class="grid--item">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <label>Grid Item</label>
+  </div>
+  <div class="grid--item">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <label>Grid Item</label>
+  </div>
+
+  {% highlight html linenos %}
+  <div class="pattern grid">
+    <div class="grid--item">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <label>Grid Item</label>
+    </div>
+    <div class="grid--item">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <label>Grid Item</label>
+    </div>
+    <div class="grid--item">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <label>Grid Item</label>
+    </div>
+    <div class="grid--item">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <label>Grid Item</label>
+    </div>
+    <div class="grid--item">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <label>Grid Item</label>
+    </div>
+    <div class="grid--item">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <label>Grid Item</label>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+<div class="pattern">
+  <h2 class="hed hed--medium center">Resource Grid</h2>
+</div>
+
+<div class="pattern grid resources">
+  <div class="resource">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <div class="resource--content">
+      <p class="hed hed--small">Resource Card</p>
+      <a class="button">Basic Button</a>
+    </div>
+  </div>
+  <div class="resource">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <div class="resource--content">
+      <p class="hed hed--small">Resource Card</p>
+      <a class="button">Basic Button</a>
+    </div>
+  </div>
+  <div class="resource">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <div class="resource--content">
+      <p class="hed hed--small">Resource Card</p>
+      <a class="button">Basic Button</a>
+    </div>
+  </div>
+  <div class="resource">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <div class="resource--content">
+      <p class="hed hed--small">Resource Card</p>
+      <a class="button">Basic Button</a>
+    </div>
+  </div>
+  <div class="resource">
+    <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+    <div class="resource--content">
+      <p class="hed hed--small">Resource Card</p>
+      <a class="button">Basic Button</a>
+    </div>
+  </div>
+
+  {% highlight html linenos %}
+  <div class="pattern grid resources">
+    <div class="resource">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <div class="resource--content">
+        <p class="hed hed--small">Resource Card</p>
+        <a class="button">Basic Button</a>
+      </div>
+    </div>
+    <div class="resource">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <div class="resource--content">
+        <p class="hed hed--small">Resource Card</p>
+        <a class="button">Basic Button</a>
+      </div>
+    </div>
+    <div class="resource">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <div class="resource--content">
+        <p class="hed hed--small">Resource Card</p>
+        <a class="button">Basic Button</a>
+      </div>
+    </div>
+    <div class="resource">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <div class="resource--content">
+        <p class="hed hed--small">Resource Card</p>
+        <a class="button">Basic Button</a>
+      </div>
+    </div>
+    <div class="resource">
+      <img class="image" src="{{ site.url }}/assets/img/place-holder-image-small.png" alt="" />
+      <div class="resource--content">
+        <p class="hed hed--small">Resource Card</p>
+        <a class="button">Basic Button</a>
+      </div>
+    </div>
+  </div>
+  {% endhighlight %}
+
+</div>
+
+<style type="text/css">å
+
+  .hed--medium.center {
+    color: #a9a9a9;
+    margin-top: 20rem;
+    margin-bottom: 1rem;
+  }
+</style>

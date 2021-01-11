@@ -1,0 +1,18 @@
+.card-copy {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  .copy {
+    margin: 0 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-copy {
+    flex-direction: column;
+  }
+  .card-copy .copy {
+    margin: 0;
+  }
+}

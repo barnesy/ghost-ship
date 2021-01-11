@@ -1,0 +1,26 @@
+.grid.resources {
+  justify-content: space-between;
+}
+
+.resource {
+  display: flex;
+  margin:4rem 2rem;
+  max-width: 36rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  img {
+    max-width: 16rem;
+    min-height: 2.4rem;
+  }
+}
+
+.resource--content {
+  padding: 2rem;
+
+  h4 {
+    color: black;
+    margin-bottom: 1rem;
+  }
+}

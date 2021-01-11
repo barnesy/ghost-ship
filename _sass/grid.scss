@@ -1,0 +1,33 @@
+.grid {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid--item {
+  display: flex;
+  margin:6rem;
+  width: 10rem;
+  flex-direction: column;
+  color: $grey;
+
+  label {
+    color: $grey;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid--item {
+    margin: 1rem;
+  }
+}

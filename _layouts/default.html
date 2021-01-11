@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <meta property="og:title" content="{{site.title}} | {{ page.title }}">
+    <meta property="og:description" content="{{site.description}}">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/native.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+  </body>
+</html>

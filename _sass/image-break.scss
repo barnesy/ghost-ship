@@ -1,0 +1,29 @@
+.image-break {
+  display: flex;
+  align-items: center;
+  padding:10rem 3rem;
+  min-height: 30rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+
+  &.dark {
+    .copy, p, .hed {
+      z-index: 1;
+      color: white;
+    }
+  }
+
+  .dimmer {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+  }
+}

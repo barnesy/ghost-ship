@@ -1,0 +1,30 @@
+blockquote {
+  border: none;
+  font-size: 2.8rem;
+  font-style: normal;
+  line-height: 4.6rem;
+  letter-spacing: 0rem;
+  font-family: 'Merriweather', serif;
+  max-width: 60rem;
+}
+
+.blockquote-container {
+  max-width: 120rem;
+  box-sizing: border-box;
+  padding: 6rem;
+
+  blockquote, p {
+    color: white;
+  }
+}
+
+@media (max-width: 800px) {
+  blockquote {
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+  }
+
+  .blockquote-container {
+    padding: 3rem;
+  }
+}
