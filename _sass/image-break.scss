@@ -9,10 +9,13 @@
   border-radius: 3rem;
   overflow: hidden;
 
-  img {
-    width: 100%;
+  &.image-break--imageonly {
+    padding: 0;
+    
+    img {
+      width: 100%;
+    }
   }
-
   &.dark {
     .copy, p, .hed {
       z-index: 1;
