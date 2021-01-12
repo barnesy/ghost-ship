@@ -14,11 +14,32 @@ textarea {
   background: none;
   font-size: 1.8rem;
   padding: 1rem .75rem;
-  border-bottom:1px solid blue;
+  color: grey;
+  border-bottom:1px solid lightgrey;
   transition: border 50ms linear, background 50ms linear,padding 50ms linear;
+  border-radius: .3rem;
 
   &:focus {
-    background: #f7f9fa;
+    background: lightgrey;
     padding: 1rem .75rem;
+  }
+}
+
+a.button {
+  color: white;
+  border-radius: .3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  height: 4.4rem;
+  background: black;
+  padding: 1rem 2rem;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    opacity: 0.8;
   }
 }
