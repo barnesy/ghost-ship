@@ -5,6 +5,11 @@
   align-items: center;
   margin: 3rem 0 6rem;
 
+  &.dark {
+    padding: 6rem 0;
+    background: black;
+  }
+
   .hed {
     width: 100%;
     flex-grow: 3;
@@ -53,8 +58,11 @@ a.card:hover{
 }
 
 .card--featured {
+  overflow: hidden;
+
   .image, img {
     width: 100%;
+    display: block;
   }
 }
 
@@ -159,4 +167,15 @@ a.card:hover{
 .card--mega {
   max-width: 60rem;
   width: 100%;
+}
+
+
+.card.dark {
+  .card--content {
+    background: rgb(30,30,30);
+
+    .hed {
+      color: white;
+    }
+  }
 }
