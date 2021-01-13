@@ -18,6 +18,8 @@ textarea {
   border-bottom:1px solid lightgrey;
   transition: border 50ms linear, background 50ms linear,padding 50ms linear;
   border-radius: .3rem;
+  -webkit-user-select: all;
+  user-select: all;
 
   &:focus {
     background: #EFEFEF;
