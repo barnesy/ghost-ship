@@ -21,18 +21,6 @@ textarea {
   -webkit-user-select: all;
   user-select: all;
 
-  &:focus {
-    background: #EFEFEF;
-    animation: select 100ms step-end 
-    padding: 1rem .75rem;
-  }
-}
-
-@keyframes select {
-  to {
-    -webkit-user-select: text;
-    user-select: text;
-  }
 }
 
 a.button {

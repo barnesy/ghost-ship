@@ -18,7 +18,7 @@ title: test
         </div>
         <div class="card--content">
           <p class="hed">Use this stylesheet:</p>
-          <input type="text" value="{{site.url}}/assets/main.css" />
+          <p class="selectable">{{site.url}}/assets/main.css<p/>
         </div>
       </div>
     </div>
@@ -71,3 +71,22 @@ title: test
     </div>
   </a>
 </div>
+
+<style>
+  .selectable {
+    user-select: all;
+
+    &:focus {
+      background: #EFEFEF;
+      animation: select 100ms step-end;
+      padding: 1rem .75rem;
+    }
+  }
+
+  @keyframes select {
+    to {
+      -webkit-user-select: text;
+      user-select: text;
+    }
+  }
+</style>
