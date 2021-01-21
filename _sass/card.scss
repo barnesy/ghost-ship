@@ -96,6 +96,7 @@ a.card:hover{
   box-shadow: unset;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  overflow: visible;
 
   .card--content {
     background: none;
