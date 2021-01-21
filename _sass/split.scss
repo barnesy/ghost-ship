@@ -9,7 +9,6 @@
     width: 100%;
     max-width: 60rem;
     background: lightgray;
-    border-bottom: 0.6rem solid $red;
   }
 
   .left, .right {
@@ -55,6 +54,11 @@
     }
     .right { width: 40%; }
   }
+}
+
+.split .left > .image,
+.split .left > .image {
+  border-bottom: 0.6rem solid $red;
 }
 
 @media (max-width: 800px) {
