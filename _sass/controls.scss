@@ -39,3 +39,17 @@ a.button {
     opacity: 0.8;
   }
 }
+
+.button.button--pill {
+	background: #EEE;
+	color: grey;
+	border-radius: 3rem;
+	margin: 1rem;
+	box-sizing: border-box;
+}
+
+.button.button--pill:hover,
+.button.button--pill.active {
+	color: white;
+	background: black;
+}
