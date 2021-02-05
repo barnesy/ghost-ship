@@ -10,4 +10,12 @@
   p {
     font-size: 1.8rem;
   }
+
+  &.copy--large {
+    max-width: 70rem;
+
+    .hed {
+      max-width: 70rem;
+    }
+  }
 }
