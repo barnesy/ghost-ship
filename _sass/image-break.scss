@@ -11,7 +11,7 @@
 
   &.image-break--imageonly {
     padding: 0;
-    
+
     img {
       width: 100%;
     }
@@ -32,5 +32,11 @@
     height: 100%;
     background: black;
     opacity: 0.6;
+  }
+}
+
+@media (max-width: 800px) {
+  .image-break{
+    padding: 1.5rem;
   }
 }
