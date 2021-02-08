@@ -98,7 +98,7 @@ ul.list {
 }
 
 @media(max-width: 600px){
-  .hed--large {
+  .hed--large, .copy p.hed--large {
     font-size: 3.2rem;
   }
 }

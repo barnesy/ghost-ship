@@ -189,3 +189,9 @@ a.card:hover{
     }
   }
 }
+
+@media (max-width: 800px) {
+  .card {
+    margin: 0;
+  }
+}
