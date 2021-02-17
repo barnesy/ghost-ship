@@ -29,7 +29,6 @@ a.button {
   justify-content: center;
   box-sizing: border-box;
   font-size: 1.8rem;
-  height: 4.4rem;
   background: black;
   padding: 1rem 2rem;
   cursor: pointer;
@@ -44,7 +43,8 @@ a.button {
 	background: #EEE;
 	color: grey;
 	border-radius: 3rem;
-	margin: 1rem;
+	margin: 0.8rem 0.6rem;
+  padding: 0.8rem 2rem;
 	box-sizing: border-box;
 }
 
