@@ -175,6 +175,10 @@ a.card:hover{
   margin-bottom: 9rem;
 }
 
+.card--max {
+  max-width: unset;
+  min-height: 40rem;
+}
 
 .card.dark {
   .card--content {
