@@ -3,12 +3,20 @@
   max-width: 60rem;
   margin: 0 auto;
 
-  &.copy--left {
-    text-align: left;
-  }
-
   p {
     font-size: 1.8rem;
+  }
+
+  &.dark {
+    color: white;
+
+    p, .hed {
+      color: white;
+    }
+  }
+
+  &.copy--left {
+    text-align: left;
   }
 
   &.copy--large {
