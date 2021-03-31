@@ -117,6 +117,10 @@ a.card:hover{
   max-width: 20rem;
   flex-direction: row;
 
+  &:hover {
+    box-shadow: none;
+  }
+
   &.card--flat {
     background: none;
 
