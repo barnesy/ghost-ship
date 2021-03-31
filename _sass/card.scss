@@ -117,6 +117,14 @@ a.card:hover{
   max-width: 20rem;
   flex-direction: row;
 
+  &.card--flat {
+    background: none;
+
+    .card--content {
+      margin: 0 1rem;
+    }
+  }
+
   .card--featured {
     max-width: 10rem;
     max-height: 10rem;
