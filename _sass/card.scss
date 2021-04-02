@@ -114,7 +114,6 @@ a.card:hover{
 }
 
 .card--micro {
-  max-width: 20rem;
   flex-direction: row;
 
   &:hover {
@@ -125,6 +124,7 @@ a.card:hover{
     background: none;
 
     .card--content {
+      width: 20rem;
       margin: 0 1rem;
       padding: 0;
 
@@ -142,6 +142,8 @@ a.card:hover{
   .card--featured {
     max-width: 10rem;
     max-height: 10rem;
+    width: 10rem;
+    height:  10rem;
     background-position: center;
     background-size: cover;
 
