@@ -34,9 +34,11 @@
   p, a {
     font-size: 1.6rem;
     margin-top: 1rem;
-
+    overflow: hidden;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
   }
 
   p:last-child {
@@ -55,9 +57,11 @@
     font-size: 2.4rem;
     color: black;
     margin: 0.6rem 0 1rem;
-
+    overflow: hidden;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -176,11 +180,6 @@ a.card:hover {
       color: black;
       line-height: 1.1;
       letter-spacing: 0;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      -webkit-box-orient: vertical;
       font-family: sans-serif;
       margin: 0.2rem 0 0rem;
     }
