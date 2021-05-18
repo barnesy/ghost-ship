@@ -118,10 +118,6 @@ a.card:hover {
   flex-direction: row;
   margin: 2rem ​3rem;
 
-  &:hover {
-    box-shadow: none;
-  }
-
   &.card--flat {
     background: none;
 
@@ -185,6 +181,10 @@ a.card:hover {
       margin: 0.2rem 0 0rem;
     }
   }
+}
+
+.card--micro.card--flat:hover {
+  box-shadow: none;
 }
 
 .split .left .card.card--micro,

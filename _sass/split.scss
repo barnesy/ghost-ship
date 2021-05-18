@@ -18,8 +18,12 @@
     align-items: center;
     width: 50%;
 
-    div {
+    .card--large, .card--small, .card {
       margin:6rem 3rem;
+    }
+
+    .card--micro {
+      margin: 1rem;
     }
 
     .copy {
