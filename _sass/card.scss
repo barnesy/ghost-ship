@@ -187,7 +187,8 @@ a.card:hover {
   }
 }
 
-.split div .card--micro {
+.split .left .card--micro,
+.split .right .card--micro {
   margin: 2rem ​3rem;
 }
 
