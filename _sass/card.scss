@@ -175,7 +175,12 @@ a.card:hover {
       font-size: 1.8rem;
       color: black;
       line-height: 1.1;
-      letter-spacing: 1.2;
+      letter-spacing: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
       font-family: sans-serif;
       margin: 0.2rem 0 0rem;
     }
